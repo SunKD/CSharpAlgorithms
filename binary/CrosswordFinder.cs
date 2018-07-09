@@ -2,12 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-// Given an integer, convert it to a roman numeral. Input can be any value between 1 to 999.
-// Roman symbols: 
-// I, V, X, L, C, D and M.
-// e.g 
-// Input : 746
-// Output: DCCXLVI 
+// Given a character 2D array, find an input string is present or not. (Like crossword puzzle) no diagnal
 namespace binary
 {
     public class CrossWordFinder
