@@ -9,7 +9,7 @@ namespace MindSweeper
 
         static void Main(string[] args)
         {
-            int[,] board = GetBoard(10, 10, 10);
+            int[,] board = GetBoard(10, 10, 4);
             for(int i = 0; i < board.GetLength(0); i++){
                 for(int j = 0; j < board.GetLength(1); j++){
                     System.Console.Write(board[i, j] + ", ");
@@ -20,14 +20,6 @@ namespace MindSweeper
 
         static int[,] GetBoard(int width, int height, int mines){
             int[,] board = new int [width,height];
-            System.Console.WriteLine("Initialized array");
-            for(int i = 0; i < board.GetLength(0); i++){
-                for(int j = 0; j < board.GetLength(1); j++){
-                    System.Console.Write(board[i, j] + ", ");
-                }
-                System.Console.WriteLine("\n");
-            }
-            System.Console.WriteLine("end of Initialized array");
             Random rnd = new Random();
             int[] surCol = {-1, 0, 1,
                             -1, 0, 1,
